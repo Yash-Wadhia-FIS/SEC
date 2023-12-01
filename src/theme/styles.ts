@@ -1,0 +1,108 @@
+import { mode } from '@chakra-ui/theme-tools';
+export const globalStyles = {
+  colors: {
+    brand: {
+      100: '#BF34B6',
+      200: '#A61F77',
+      300: '#0388A6',
+      400: '#D90452',
+      500: '#F2F2F2',
+      600: '#F2F2F2',
+      700: '#F2F2F2',
+      800: '#F2F2F2',
+      900: '#F2F2F2',
+    },
+    brandScheme: {
+      100: '#BF34B6',
+      200: '#D90452',
+      300: '#D90452',
+      400: '#D90452',
+      500: '#A61F77',
+      600: '#0388A6',
+      700: '#F2F2F2',
+      800: '#F2F2F2',
+      900: '#F2F2F2',
+    },
+    brandTabs: {
+      100: '#BF34B6',
+      200: '#0388A6',
+      300: '#0388A6',
+      400: '#0388A6',
+      500: '#0388A6',
+      600: '#F2F2F2',
+      700: '#F2F2F2',
+      800: '#F2F2F2',
+      900: '#F2F2F2',
+    },
+    secondaryGray: {
+      100: '#E0E5F2',
+      200: '#E2E8F0',
+      300: '#F4F7FE',
+      400: '#E9EDF7',
+      500: '#718096',
+      600: '#A3AED0',
+      700: '#707EAE',
+      800: '#707EAE',
+      900: '#1B2559',
+    },
+    red: {
+      100: '#FEEFEE',
+      500: '#EE5D50',
+      600: '#E31A1A',
+    },
+    blue: {
+      50: '#EFF4FB',
+      500: '#3965FF',
+    },
+    orange: {
+      100: '#FFF6DA',
+      500: '#FFB547',
+    },
+    green: {
+      100: '#E6FAF5',
+      500: '#01B574',
+    },
+    white: {
+      50: '#ffffff',
+      100: '#ffffff',
+      200: '#ffffff',
+      300: '#ffffff',
+      400: '#ffffff',
+      500: '#ffffff',
+      600: '#ffffff',
+      700: '#ffffff',
+      800: '#ffffff',
+      900: '#ffffff',
+    },
+    navy: {
+      50: '#d0dcfb',
+      100: '#aac0fe',
+      200: '#a3b9f8',
+      300: '#728fea',
+      400: '#3652ba',
+      500: '#1b3bbb',
+      600: '#24388a',
+      700: '#1B254B',
+      800: '#111c44',
+      900: '#0b1437',
+    },
+    gray: {
+      100: '#FAFCFE',
+    },
+  },  
+  styles: {
+    global: (props: any) => ({
+      body: {
+        overflowX: 'hidden',
+        bg: mode('#fdfeff', 'navy.900')(props),
+        fontFamily: 'Plus Jakarta Sans',
+      },
+      input: {
+        color: 'gray.700',
+      },
+      html: {
+        fontFamily: 'Plus Jakarta Sans',
+      },
+    }),
+  },
+};
