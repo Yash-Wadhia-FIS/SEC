@@ -21,6 +21,7 @@ import { ChatInner } from '@/components/chat/ChatInner';
 import { sendMessage } from "./api/_request"
 
 
+
 const AuthenticationComponent: React.FC<any> = () => {
   const { isAuthenticated, logout } = useAuth();
   const context = useContext(AuthContext);
@@ -76,6 +77,7 @@ const AuthenticationComponent: React.FC<any> = () => {
           pt="50px"
         >
           <ChatInner />
+          
         </Box>
       </Box>
     </>

@@ -14,6 +14,7 @@ import {
 import { useState, useEffect } from 'react';
 import AdminNavbarLinks from '../src/components/navbar/NavbarLinksAdmin';
 import { isWindowAvailable } from '@/utils/navigation';
+import { useRouter } from 'next/router';
 
 
 export default function AdminNavbar(props: {
@@ -24,6 +25,7 @@ export default function AdminNavbar(props: {
   setApiKey: any;
 }) {
   const [scrolled, setScrolled] = useState(false);
+  const [changePage, setChangePage] = useState(true);
 
   useEffect(() => {
     isWindowAvailable() && window.addEventListener('scroll', changeNavbar);
@@ -56,6 +58,11 @@ export default function AdminNavbar(props: {
       setScrolled(false);
     }
   };
+
+  const changeValue = () =>{
+    setChangePage(false)
+  }
+
 
   return (
     <Box
@@ -113,7 +120,6 @@ export default function AdminNavbar(props: {
       >
         <Box mb={{ base: '8px', md: '0px' }}>
 
-
           <Box
             color={"#191919"}
             bg="inherit"
@@ -141,18 +147,19 @@ export default function AdminNavbar(props: {
             </BreadcrumbItem>
             <BreadcrumbItem color="#191919" fontSize="sm" fontWeight="700" fontFamily="'Poppins', sans-serif">
               <Link>
-                <Button>
+                <Button onClick={changeValue}>
                   عربي
                 </Button>
               </Link>
             </BreadcrumbItem>
           </Breadcrumb>
+
         </Box>
         <Box ms="auto" w={{ sm: '100%', md: 'unset' }}>
           <AdminNavbarLinks setApiKey={setApiKey} secondary={props.secondary} />
         </Box>
       </Flex>
     </Box>
+
   );
 }
-

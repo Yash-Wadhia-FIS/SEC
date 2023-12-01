@@ -204,8 +204,7 @@ const ChatInner: FC = () => {
                 </Box>
               </Flex>
             )
-          })}
-             
+          })}   
         </Box >
       </Flex >
       <Flex mt="auto" width="100%">
