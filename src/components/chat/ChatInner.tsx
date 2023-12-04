@@ -139,7 +139,6 @@ const ChatInner: FC = () => {
 
   return (
     <>
-
       <Flex direction="column" p={4} minHeight="66vh" position="relative">
         <Box className="layout" maxHeight="520px" overflowY="scroll" css={{
           '&::-webkit-scrollbar': {
@@ -170,7 +169,9 @@ const ChatInner: FC = () => {
           {posts.map((post, index) => {
            {console.log(post)}
             return (
+
               <Flex
+
                 key={index}
                 justifyContent={post.type === "user" ? "flex-end" : "flex-start"}
                 marginTop={index !== 0 && posts[index - 1].type !== post.type ? "16px" : "0"}
@@ -204,8 +205,7 @@ const ChatInner: FC = () => {
                 </Box>
               </Flex>
             )
-          })}
-             
+          })}  
         </Box >
       </Flex >
       <Flex mt="auto" width="100%">

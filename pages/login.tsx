@@ -41,8 +41,7 @@ const LoginPage: React.FC = () => {
     };
 
     return (
-        <>
-        
+        <>    
             <VStack
                 spacing={4}
                 align="center"
@@ -129,13 +128,12 @@ const LoginPage: React.FC = () => {
                                 },
                             }}
                         >
-                            <span style={{ marginRight: '8px' }}>Login In</span> 
+                            <span style={{ marginRight: '8px' }}>Log In</span> 
                             <FaArrowRightLong />
                         </Button>
                     </Flex>
                 </Box>
             </VStack>
-
         </>
     );
 };

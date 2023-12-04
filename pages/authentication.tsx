@@ -16,7 +16,7 @@ import { useContext } from "react"
 import { useRouter } from 'next/router';
 import { FullPageChat } from "flowise-embed-react"
 import { CustomChatProps } from "../src/types/chat-types"
-import { chatStyle } from "../src/styles/chatStyle"
+// import { chatStyle } from "../src/styles/chatStyle"
 import { ChatInner } from '@/components/chat/ChatInner';
 import { sendMessage } from "./api/_request"
 
