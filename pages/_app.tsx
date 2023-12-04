@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head'
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from '@/theme/theme';
 import { AuthProvider } from '../src/contexts/AuthContext';
@@ -13,13 +14,20 @@ interface CustomAppProps extends AppProps {
 
 const App: React.FC<CustomAppProps> = () => {
   return (
-    <ChakraProvider theme={theme}>
-      <AuthProvider>
-        <ChatProvider>
-          <AuthenticationComponent />
-        </ChatProvider>
-      </AuthProvider>
-    </ChakraProvider>
+    <>
+    <Head>
+      <title>
+        Saudi Electricity 
+      </title>
+    </Head>
+      <ChakraProvider theme={theme}>
+        <AuthProvider>
+          <ChatProvider>
+            <AuthenticationComponent />
+          </ChatProvider>
+        </AuthProvider>
+      </ChakraProvider>
+    </>
   );
 };
 
