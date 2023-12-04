@@ -1,13 +1,13 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from 'next/document';
 import Script from 'next/script';
 
 
 export default function Document() {
 
   return (
-    <Html>
+    <Html lang="en">
       <Head>
-
+       
       </Head>
       <body suppressHydrationWarning={true}>
         <Main />
@@ -16,8 +16,6 @@ export default function Document() {
     </Html>
   );
 }
-
-
 
 
 

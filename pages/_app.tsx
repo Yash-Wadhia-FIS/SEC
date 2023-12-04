@@ -15,11 +15,9 @@ interface CustomAppProps extends AppProps {
 const App: React.FC<CustomAppProps> = () => {
   return (
     <>
-    <Head>
-      <title>
-        Saudi Electricity 
-      </title>
-    </Head>
+      <Head>
+        <title>Saudi Electricity</title>
+      </Head>
       <ChakraProvider theme={theme}>
         <AuthProvider>
           <ChatProvider>
